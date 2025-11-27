@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "taxi_monitor"
 version = "0.0.1"
 authors = [
-  { name="Durlav Paul", email="durlav.paul@adben.in" },
+  { name="Durlav Paul", email="durlavpaul31@gmail.com" },
 ]
 license = { text = "GPL-3.0-or-later" }
 
@@ -27,3 +27,4 @@ classifiers = [
 
 [project.scripts]
 taximonitor-server = "taxi_monitor.server:main"
+
