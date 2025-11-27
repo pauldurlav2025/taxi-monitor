@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "taxi_monitor"
+version = "0.0.1"
+authors = [
+  { name="Durlav Paul", email="durlav.paul@adben.in" },
+]
+license = { text = "GPL-3.0-or-later" }
+
+dependencies = [
+  "websockets>=10.0",
+  "numpy>=1.20",
+  "matplotlib>=3.0",
+]
+
+description = "A taxi monitoring server and clients"
+readme = "README.md"
+requires-python = ">=3.12.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+taximonitor-server = "taxi_monitor.server:main"
